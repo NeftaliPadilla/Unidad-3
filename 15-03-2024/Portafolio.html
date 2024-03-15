@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafoli profecional</title>
+    <link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+    <div class="container">
+        <section class="info">
+            <div class="info-personal">
+                <img src="foto.jpg" alt="" class="foto">
+                <span>Brian Neftali Padilla Garcia</span>
+                <p>Ingeniero en Software</p>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#" onclick="mostrarContenido('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="mostrarContenido('sobre')">Sobre mí</a></li>
+                    <li><a href="#" onclick="mostrarContenido('servicios')">Servicios</a></li>
+                    <li><a href="#" onclick="mostrarContenido('portafolio')">Portafolio</a></li>
+                    <li><a href="#" onclick="mostrarContenido('contacto')">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="portada" id="portadaContenido">
+            <h1>Brian<span class="rojo">Padilla</span></h1>
+            <p>Programador web</p>
+            <a href="https://drive.google.com/file/d/1Fuve2-0ikIc5zmL_3mnE3k0NCCqQBbdR/view?usp=sharing" download="CV.pdf">
+                <button class="boton">Descargar CV</button>
+            </a>
+        </section>
+    </div>
+    <script>
+        function mostrarContenido(seccion) {
+            var portadaContenido = document.getElementById('portadaContenido');
+            switch (seccion) {
+                case 'inicio':
+                    portadaContenido.innerHTML = '<h1>Brian<span class="rojo">Padilla</span></h1><p>Programador web</p><a href="https://drive.google.com/file/d/1Fuve2-0ikIc5zmL_3mnE3k0NCCqQBbdR/view?usp=sharing" download="CV.pdf"><button class="boton">Descargar CV</button></a>';
+                    break;
+                case 'sobre':
+                    portadaContenido.innerHTML = '<h1><span class="rojo">Sobre Mí</span></h1><p>Soy un estudiante que estudia Ingenieria en Software, me gusta programar en los lenguajes c++ y python; actualmente estoy viendo programacion web y estoy aprendiendo de la sintaxis de html, css y javascrip.</p>';
+                    break;
+                case 'servicios':
+                    portadaContenido.innerHTML = '<h1><span class="rojo">Servicios</span></h1><nav><ul><li><p>Creacion de programas en c++ y python</p></li><li><p>Creacion de paginas web con css y javascrip</p></li><li><p>creacion de base de datos con mysql</p></li></ul></nav><div class="contenedor-imagenes"><img src="c++.jpg" class="imagen" alt=""><img src="python.png" class="imagen" alt=""><img src="html.jpg" class="imagen" alt=""></div>';
+                    break;
+                case 'portafolio':
+                    portadaContenido.innerHTML = '<h1><span class="rojo">Portafolio</span></h1><div class="cajas"><div class="box"><img src="Ca1.png" alt="Imagen 1"><a href="https://github.com/NeftaliPadilla/Examen-unidad-1.git">Pagina web</a></div><div class="box"><img src="Ca2.png" alt="Imagen 2"><a href="https://github.com/NeftaliPadilla/Examen-unidad-2.git">Formulario</a></div><div class="box"><img src="Ca3.png" alt="Imagen 3"><a href="enlace3.html">Portafolio</a></div><div class="box"><img src="Ca4.png" alt="Imagen 4"><a href="https://github.com/NeftaliPadilla?tab=repositories">Proyectos</a></div></div>';
+                    break;
+                case 'contacto':
+                    portadaContenido.innerHTML = '<h1><span class="rojo">Contacto</span></h1><div class="contenedor-imagenes"><img class="imagen" src="face.png" alt="Logo 1"><p>Neftali</p></div><div class="contenedor-imagenes"><img class="imagen" src="gmail.jpg" alt="Logo 2"><p>Neftali123@gmail.com</p></div><div class="contenedor-imagenes"><img class="imagen" src="git.png" alt="Logo 3"><p>NeftaliPadilla</p></div>';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
