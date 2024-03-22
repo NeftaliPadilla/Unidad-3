@@ -1,0 +1,1 @@
+<h1><span class="rojo">Sobre Mí</span></h1><p>Soy un estudiante que estudia Ingenieria en Software, me gusta programar en los lenguajes c++ y python; actualmente estoy viendo programacion web y estoy aprendiendo de la sintaxis de html, css y javascrip.</p>

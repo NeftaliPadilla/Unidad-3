@@ -1,0 +1,1 @@
+<h1><span class="rojo">Contacto</span></h1><div class="contenedor-imagenes"><img class="imagen" src="face.png" alt="Logo 1"><p>Neftali</p></div><div class="contenedor-imagenes"><img class="imagen" src="gmail.jpg" alt="Logo 2"><p>Neftali123@gmail.com</p></div><div class="contenedor-imagenes"><img class="imagen" src="git.png" alt="Logo 3"><p>NeftaliPadilla</p></div>
